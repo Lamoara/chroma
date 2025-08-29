@@ -1,10 +1,7 @@
 use std::sync::Arc;
 
 use tracing::debug;
-use winit::{
-    application::ApplicationHandler,
-    window::Window,
-};
+use winit::{application::ApplicationHandler, window::Window};
 
 use crate::wgpu_ctx::WgpuCtx;
 

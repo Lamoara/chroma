@@ -76,9 +76,7 @@ impl<'window> WgpuCtx<'window> {
     }
 
     pub fn draw(&mut self) -> anyhow::Result<()> {
-        let surface_texture = self
-            .surface
-            .get_current_texture()?;
+        let surface_texture = self.surface.get_current_texture()?;
         let texture_view = surface_texture
             .texture
             .create_view(&wgpu::TextureViewDescriptor::default());
